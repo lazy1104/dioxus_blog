@@ -1,0 +1,211 @@
+<article class="markdown">
+    <h3>一、标题</h3>
+    <p>使用#来设置标题，注意符号与标题间有一个空格，示例：</p>
+    <pre><code># 一级标题
+    ## 二级标题
+    ### 三级标题
+    #### 四级标题
+    ##### 五级标题
+    ###### 六级标题
+    </code></pre>
+    <p>显示效果如下</p>
+    <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    <h4>四级标题</h4>
+    <h5>五级标题</h5>
+    <h6>六级标题</h6>
+    <hr>
+    <h3>二、字体</h3>
+    <ul>
+    <li><strong>加粗</strong></li>
+    </ul>
+    <pre><code>**加粗**
+    </code></pre>
+    <ul>
+    <li><em>斜体</em></li>
+    </ul>
+    <pre><code>*斜体*
+    </code></pre>
+    <ul>
+    <li><em><strong>斜体加粗</strong></em></li>
+    </ul>
+    <pre><code>***斜体加粗***
+    </code></pre>
+    <ul>
+    <li><del>删除线</del></li>
+    </ul>
+    <pre><code>~~删除线~~
+    </code></pre>
+    <hr>
+    <h3>三、引用</h3>
+    <p>需要引用的内容前加<code>&gt;</code>即可，引用可以嵌套
+    &gt;引用内容一层
+    &gt;&gt;引用内容二层
+    &gt;&gt;&gt;&gt;&gt;多层嵌套</p>
+    <pre><code>&gt;引用内容一层
+    &gt;&gt;引用内容二层
+    &gt;&gt;&gt;&gt;&gt;多层嵌套
+    </code></pre>
+    <hr>
+    <h3>四、分割线</h3>
+    <p>三个或三个以上的<code>-</code>或者是<code>*</code>都可以</p>
+    <pre><code>---
+    ----
+    ***
+    ****
+    </code></pre>
+    <p>效果如下:</p>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <h3>五、图片</h3>
+    <p>使用语法</p>
+    <pre><code>![图片alt](图片地址 ''图片title'')
+    
+    图片alt就是显示在图片下面的文字，相当于对图片内容的解释。
+    图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加
+    </code></pre>
+    <p>示例</p>
+    <pre><code>![markdown](images/markdown.png "markdown")
+    </code></pre>
+    <p><img src="https://github.com/dcurtis/markdown-mark/blob/master/png/66x40.png?raw=true" alt="markdown" title="markdown"></p>
+    <hr>
+    <h3>六、超链接</h3>
+    <p>使用语法</p>
+    <pre><code>[超链接名](超链接地址 "超链接title")
+    </code></pre>
+    <p>title可加可不加
+    连接地址中出现特殊字符的要用unicode编码代替，如空格需替换成<code>%20</code>
+    示例
+    外联</p>
+    <pre><code>[百度一下，你就知道 (baidu.com)](https://www.baidu.com/)
+    </code></pre>
+    <p><a href="https://www.baidu.com/">百度一下，你就知道 (baidu.com)</a></p>
+    <p>内联</p>
+    <pre><code>[页内链接](#七、列表)
+    </code></pre>
+    <p><a href="#%E4%B8%83%E3%80%81%E5%88%97%E8%A1%A8">页内链接</a></p>
+    <hr>
+    <h3>七、列表</h3>
+    <h5>无序列表</h5>
+    <p>使用<code>-</code> 、<code>+</code>、 <code>*</code>即可</p>
+    <pre><code>- 无序列表
+    + 无序列表
+    * 无序列表
+    </code></pre>
+    <ul>
+    <li>无序列表</li>
+    </ul>
+    <ul>
+    <li>无序列表</li>
+    </ul>
+    <ul>
+    <li>无序列表</li>
+    </ul>
+    <h5>有序列表</h5>
+    <p>使用<code>数字.</code>的方式即可</p>
+    <pre><code>1. 有序列表
+    2. 有序列表
+    3. 有序列表
+    </code></pre>
+    <ol>
+    <li>有序列表</li>
+    <li>有序列表</li>
+    <li>有序列表</li>
+    </ol>
+    <hr>
+    <h3>八、表格</h3>
+    <p>语法如下</p>
+    <pre><code>|表头|表头|表头|
+    |---|:--:|---:|
+    |内容|内容|内容|
+    |内容|内容|内容|
+    
+    第二行分割表头和内容。
+    - 有一个就行，为了对齐，多加了几个
+    文字默认居左
+    -两边加：表示文字居中
+    -右边加：表示文字居右
+    最两侧的|非必须
+    </code></pre>
+    <p>示例如下</p>
+    <pre><code>表头一|表头二|表头三|
+    -|:-:|-:
+    |1.1|1.2|1.3
+    2.1|2.2|2.3|
+    </code></pre>
+    <p>表头一|表头二|表头三|
+    -|:-:|-:
+    |1.1|1.2|1.3
+    2.1|2.2|2.3|</p>
+    <h3>九、代码块</h3>
+    <p>插入程序代码的方式有两种：使用反引号 `（~ 键）、使用缩进（Tab）。</p>
+    <ul>
+    <li>插入行内代码，即插入一个单词或者一句代码的情况，使用 `code` 这样的形式插入。</li>
+    <li>插入多行代码，分别使用三个反引号```包裹多行代码。或者使用缩进。</li>
+    </ul>
+    <h5>行内代码</h5>
+    <p>在一般的段落文字中，可以使用反引号 ` 来标记或插入代码区段。</p>
+    <pre><code class="language-cpp">C语言里的函数 `scanf()` 怎么使用？
+    </code></pre>
+    <p>C语言里的函数 <code>scanf()</code> 怎么使用？</p>
+    <p>当然也可以标记 <code>文件名</code> 、<code>关键词</code> 等。</p>
+    <h5>多行代码</h5>
+    <ul>
+    <li>在需要高亮的代码块的前一行及后一行使用三个反引号 ```（~ 键）</li>
+    <li>同时第一行反引号后面，输入代码块所使用的语言，实现代码高亮。</li>
+    </ul>
+    <p>比如高亮 <code>python3</code> 代码块：</p>
+    <pre><code class="language-markdown">```python
+    #!/usr/bin/env python3
+    print("Hello, World!");
+    ```
+    </code></pre>
+    <p>显示为：</p>
+    <pre><code class="language-python">#!/usr/bin/env python3
+    print("Hello, World!");
+    </code></pre>
+    <h5>缩进式插入多行代码</h5>
+    <blockquote>
+    <p><strong>注意</strong>：<br>
+    缩进式插入前方必须有空行；<br>
+    缩进 4 个空格或是 1 个制表符；<br>
+    一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p>
+    </blockquote>
+    <p>代码：</p>
+    <pre><code class="language-csharp">此处有空行
+        #include  &lt;stdio.h&gt;`
+        int main(void)`
+        {
+            printf("Hello world\n");
+        }
+    </code></pre>
+    <p>显示效果：</p>
+    <pre><code>#include  &lt;stdio.h&gt;`
+    int main(void)`
+    {
+        printf("Hello world\n");
+    }
+    </code></pre>
+    <h5>代码区块中的内容</h5>
+    <p>代码区块中，一般的 Markdown 语法不会被转换，像是 * 便只是星号，这表示你可以很容易地以 Markdown 语法撰写 Markdown 语法相关的文件。</p>
+    <pre><code>```markdown
+    Markdown 语法展示
+    ```
+    </code></pre>
+    <p>比如下面展示 Markdown 常用语法：</p>
+    <pre><code class="language-markdown">Markdown 目录：
+    [TOC]
+    
+    Markdown 标题：
+    # 这是 H1
+    </code></pre>
+    <hr>
+    </article>
+    <script>
+    document.querySelector(".tag_a").addEventListener("click", function(event) {
+         event.preventDefault();
+    }, false);
+    </script>

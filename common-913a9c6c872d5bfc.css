@@ -1,0 +1,17 @@
+html, body, #main {
+    height: 100%;
+}
+
+.main-box {
+    padding: 20px;
+    margin: auto;
+    max-width: 1600px;
+}
+
+.use-radius {
+    border-radius: 6px !important;
+}
+
+.gab-2 {
+    gap: 0.5rem;
+}
